@@ -604,12 +604,19 @@
         <p>Crafted with <span>cloud</span> excellence by Pravin Mishra</p>
         <p>
         <footer style="text-align: center;">
-          Pravin Mishra Portfolio v1.0 — Deployed on 05 Feb 2025 — By Isaac Owusu-Ansah</p>
+          Pravin Mishra Portfolio v1.0 — Deployed on <span id="deployDate">05 Feb 2025</span> — By Isaac Owusu-Ansah</p>
       </div>
 
     </div>
   </footer>
 
+
+
+  <script>
+    const d = new Date();
+    const formattedDate = d.toISOString().split('T')[0];
+    document.getElementById("deployDate").textContent = formattedDate;
+  </script>
 
 
 </body>
